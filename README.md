@@ -36,7 +36,7 @@ Coisas para adicionar:
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
 * Sistema de tempo.
 
-<p align="center">
+<p text-align="center">
 Projeto feito por: Yogi Nam de Souza Barbosa
 </p>
 
