@@ -9,7 +9,8 @@ Funcionando:
 
 * Perguntas e respostas, tanto as objetivas quanto a discursiva;
 * Toda a funcionalidade dos botões;
-* Feedback para saber se acertou.
+* Feedback para saber se acertou;
+* Botão para resetar o site e tentar novamente.
 
 Coisas para adicionar:
 
@@ -17,4 +18,4 @@ Coisas para adicionar:
 * Sistema de pontos para ter o máximo de questões acertadas em sequência;
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
-* Sistema de tempo;
+* Sistema de tempo.
