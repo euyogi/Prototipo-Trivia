@@ -7,11 +7,11 @@ Por enquanto a forma mais fácil de testar é baixar o zip com os arquivos, extr
 uma pasta e arrasta-la para o navegador, em seguida abrir o arquivo index.html.
 
 <div>
-  <img src="https://user-images.githubusercontent.com/46427886/220999520-f05bc3ad-c980-44f3-a881-029e8966392a.png" height="49%" alt-text="Passo a passo (1)" />
-  <img src="https://user-images.githubusercontent.com/46427886/220998927-06dd7985-0c97-426a-8a6d-458122bc90a3.png" height="49%" alt-text="Passo a passo (2)" /> 
+  <img src="https://user-images.githubusercontent.com/46427886/220999520-f05bc3ad-c980-44f3-a881-029e8966392a.png" width="40%" alt-text="Passo a passo (1)" />
+  <img src="https://user-images.githubusercontent.com/46427886/220998927-06dd7985-0c97-426a-8a6d-458122bc90a3.png" width="58%" alt-text="Passo a passo (2)" /> 
 </div>
 <div>
-<div>
+<div align="center">
   <img src="https://user-images.githubusercontent.com/46427886/220998830-fee52177-06c6-4a60-8a2c-b0300dc9df06.png" alt-text="Passo a passo (3)" />
   <img src="https://user-images.githubusercontent.com/46427886/221000886-5804fcd1-b1bf-4bea-a0b1-7ff8c72e0d8d.png" alt-text="Passo a passo (4)" /> 
 </div>
@@ -36,7 +36,7 @@ Coisas para adicionar:
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
 * Sistema de tempo.
 
-<p text-align="center">
+<p align="center">
 Projeto feito por: Yogi Nam de Souza Barbosa
 </p>
 
