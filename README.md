@@ -26,7 +26,7 @@ Para testar:
 Por enquanto a forma mais fácil de testar é baixar o zip com os arquivos, extrair para
 uma pasta e arrasta-la para o navegador, em seguida abrir o arquivo index.html.
 
-<div>
+<div align="center">
   <img src="https://user-images.githubusercontent.com/46427886/220999520-f05bc3ad-c980-44f3-a881-029e8966392a.png" width="47%" alt-text="Passo a passo (1)" />
   <img src="https://user-images.githubusercontent.com/46427886/220998927-06dd7985-0c97-426a-8a6d-458122bc90a3.png" width="49%" alt-text="Passo a passo (2)" /> 
 </div>
