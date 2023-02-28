@@ -1,18 +1,18 @@
 # Projeto-Trivia
 Inspirado no Lab Nº 8 do curso CS50
 
-Tela inicial:
+<h2>Tela inicial:</h2>
 
 ![Imagem da tela inicial](https://user-images.githubusercontent.com/46427886/220988566-c96c5592-0cfb-4c76-9aef-9fc1db9cbefa.jpeg)
 
-Funcionando:
+<h2>Funcionando:<h2>
 
 * Perguntas e respostas, tanto as objetivas quanto a discursiva;
 * Toda a funcionalidade dos botões;
 * Feedback para saber se acertou;
 * Botão para resetar o site e tentar novamente.
 
-Coisas para adicionar:
+<h2>Coisas para adicionar:<h2>
 
 * Ver se dá para hospedar o projeto no github de graça para ser mais fácil de acessar;
 * Mais perguntas, de preferência ler as perguntas de um arquivo csv;
@@ -21,9 +21,9 @@ Coisas para adicionar:
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
 * Sistema de tempo.
 
-Para testar:
+<h2>Para testar:<h2>
 
-<a href="https://euyogi.github.io/Projeto-Trivia/">Abrir Projeto-Trivia</a>
+<a align="center" href="https://euyogi.github.io/Projeto-Trivia/">Abrir Projeto-Trivia</a>
 
 <p align="center">
 Projeto feito por: Yogi Nam de Souza Barbosa
