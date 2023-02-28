@@ -23,23 +23,12 @@ Coisas para adicionar:
 
 Para testar:
 
-Por enquanto a forma mais fácil de testar é baixar o zip com os arquivos, extrair para
-uma pasta e arrasta-la para o navegador, em seguida abrir o arquivo index.html.
+<a href="https://euyogi.github.io/Projeto-Trivia/">Abrir Projeto-Trivia</a>
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/46427886/220999520-f05bc3ad-c980-44f3-a881-029e8966392a.png" width="47%" alt-text="Passo a passo (1)" />
-  <img src="https://user-images.githubusercontent.com/46427886/220998927-06dd7985-0c97-426a-8a6d-458122bc90a3.png" width="49%" alt-text="Passo a passo (2)" /> 
-</div>
-<div>
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/46427886/220998830-fee52177-06c6-4a60-8a2c-b0300dc9df06.png" alt-text="Passo a passo (3)" />
-  <img src="https://user-images.githubusercontent.com/46427886/221000886-5804fcd1-b1bf-4bea-a0b1-7ff8c72e0d8d.png" width="50%" alt-text="Passo a passo (4)" /> 
-</div>
-  
 <p align="center">
 Projeto feito por: Yogi Nam de Souza Barbosa
 </p>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/46427886/218377101-f832c1a3-6c48-4016-92d2-0d8b6a4fafd5.gif" width="10%" alt-text="Minha imagem de perfil (um cachorro)" />
+  <img src="https://user-images.githubusercontent.com/46427886/218377101-f832c1a3-6c48-4016-92d2-0d8b6a4fafd5.gif" width="10%" alt-text="Minha imagem de perfil (umcachorro)" />
 </div>
