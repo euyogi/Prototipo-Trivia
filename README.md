@@ -5,7 +5,7 @@ Inspirado no Lab Nº 8 do curso CS50
 
 ![Imagem da tela inicial](https://user-images.githubusercontent.com/46427886/220988566-c96c5592-0cfb-4c76-9aef-9fc1db9cbefa.jpeg)
 
-<h2>Funcionando:</h2>
+<h2>Funcionalidades:</h2>
 
 * Perguntas e respostas, tanto as objetivas quanto a discursiva;
 * Toda a funcionalidade dos botões;
