@@ -14,7 +14,6 @@ Inspirado no Lab Nº 8 do curso CS50
 
 <h2>Coisas para adicionar:</h2>
 
-* Ver se dá para hospedar o projeto no github de graça para ser mais fácil de acessar;
 * Mais perguntas, de preferência ler as perguntas de um arquivo csv;
 * Sistema de pontos para ter o máximo de questões acertadas em sequência;
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
