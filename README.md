@@ -1,4 +1,4 @@
-# Projeto-Trivia
+# Protótipo-Trivia
 Inspirado no Lab Nº 8 do curso CS50
 
 <h2>Tela inicial:</h2>
