@@ -22,7 +22,7 @@ Inspirado no Lab Nº 8 do curso CS50
 
 <h2>Para testar:</h2>
 
-<a align="center" href="https://euyogi.github.io/Projeto-Trivia/">Abrir Projeto-Trivia</a>
+<a align="center" href="https://euyogi.github.io/Prototipo-Trivia/">Abrir Projeto-Trivia</a>
 
 <p align="center">
   Projeto feito por: Yogi Nam de Souza Barbosa
