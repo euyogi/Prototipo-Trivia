@@ -37,7 +37,9 @@ body {
     color: #fff;
     margin-bottom: 2rem;
     padding: 2rem 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Cria um espaçamento entre os elementos filhos */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
 }
 
 .section, #reset_div {
@@ -85,4 +87,9 @@ input[type="text"] {
 input[type="text"]:hover {
     background-color: #f5f5f5;
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+#title {
+    margin-right: auto;
+    margin-left: auto;
 }
