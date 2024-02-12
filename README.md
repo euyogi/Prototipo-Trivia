@@ -14,7 +14,7 @@ Inspirado no Lab Nº 8 do curso CS50
 
 <h2>Coisas para adicionar:</h2>
 
-* Mais perguntas, de preferência ler as perguntas de um arquivo csv;
+* ~Mais perguntas, de preferência ler as perguntas de um arquivo csv~ EM PROCESSO (Trivia API);
 * Sistema de pontos para ter o máximo de questões acertadas em sequência;
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
