@@ -1,36 +1,119 @@
 // Colors.
-let light_green = "#4CAF50", light_red = "#F44336";
+const LIGHT_GREEN = "#4CAF50", LIGHT_RED = "#F44336";
 
-// Changes the alternatives buttons class to disabled.
+// When tries == 9 the game is over.
+let points = 0, tries = 0;
+
+// Disables alternatives buttons.
 function disable_options() {
-    // Gets a list with every button element inside the div with class "row".
     let buttons = document.getElementsByClassName("row")[0].childNodes;
 
-    // Iterates over that list.
     for (let button of buttons) {
         // Gets only the button elements (because there are text elements inside it as well).
-        if (button.tagName =="BUTTON") // Changes the class of that button.
+        if (button.tagName == "BUTTON") // Changes the class of that button.
             button.classList.add("disabled");
     }
 }
 
-function shuffle(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+function delete_options() {
+    let row = document.getElementsByClassName("row")[0];
+
+    // It needs to be backwards otherwise not all buttons will be removed.
+    for (let i = row.childNodes.length - 1; i >= 0; --i) {
+        let button = row.childNodes.item(i);
+        if (button.tagName == "BUTTON") // Not all children are buttons.
+          row.removeChild(button);
+    }
+}
+
+function answered_event(button, flag, fb_1, points_text) {
+    disable_options();
+
+    // Enable the option.
+    button.classList.remove("disabled");
+
+    // Changes the class, that will give it a colored background, white letters, disable hover.
+    if (flag) {
+        button.classList.add("correct");
+        fb_1.innerHTML = "Correct :) Looking for next...";
+        fb_1.style.color = LIGHT_GREEN;
+        points_text.innerHTML = "Points: " + ++points;
+    }
+    else {
+        button.classList.add("incorrect");
+        fb_1.innerHTML = "Incorrect :( Looking for next...";
+        fb_1.style.color = LIGHT_RED;
     }
 
-    return arr;
+    ++tries;
+}
+
+function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+}
+
+function generate_questions(data) {
+    delete_options();
+
+    let q_1 = document.getElementById("question_1");
+    let fb_1 = document.getElementById("feedback_1");
+
+    if (tries == 10) {
+        q_1.innerHTML = "";
+
+        if (points > 6) {
+            fb_1.innerHTML = "You got " + points + "/10 congrats!";
+            fb_1.style.color = LIGHT_GREEN;
+        }
+        else {
+            fb_1.innerHTML = "You got " + points + "/10 maybe try again!";
+            fb_1.style.color = LIGHT_RED;
+        }
+
+        return;
+    }
+
+    fb_1.innerHTML = "";
+    q_1.innerHTML = data[tries].question.text;
+
+    let answers = [ ...data[tries].incorrectAnswers, data[tries].correctAnswer ]
+    shuffle(answers);
+
+    let points_text = document.getElementById("points");
+
+    for (let option of answers) {
+        let button = document.createElement("button");
+        
+        if (option == data[tries].correctAnswer) {
+            button.setAttribute("name", "correct");
+
+            button.addEventListener("click", function() { 
+                answered_event(button, true, fb_1, points_text);
+                setTimeout(generate_questions, 3000, data);
+            });
+        }
+        else {
+            button.setAttribute("name", "incorrect");
+
+            button.addEventListener("click", function() { 
+                answered_event(button, false, fb_1, points_text);
+                setTimeout(generate_questions, 3000, data);
+            });
+        }
+
+        button.setAttribute("type", "button");
+        button.innerHTML = option;
+
+        document.getElementById("options_1").appendChild(button);
+    }
 }
 
 // After DOM has been loaded.
 document.addEventListener("DOMContentLoaded", function() {
-
-    // Gets both "feedback" elements, one for each question.
-    let fb_1 = document.getElementById("feedback_1");
-    let fb_2 = document.getElementById("feedback_2");
-
-    fetch("https://the-trivia-api.com/v2/questions")
+    fetch("https://the-trivia-api.com/v2/questions?difficulties=easy")
         .then((response) => {
             // Check if the response is successful
             if (response.ok) // Parse the response as JSON
@@ -39,101 +122,39 @@ document.addEventListener("DOMContentLoaded", function() {
                 throw new Error("Something went wrong");
         })
         .then((data) => { // Handle the data
-            console.log(data);
+            generate_questions(data);
+        });
 
-            let fq = document.getElementById("first_question");
-            fq.innerHTML = data[0].question.text;
+    // Gets the first and only element with the name "submit_btn".
+    let submit = document.getElementsByName("submit_btn")[0];
+    let fb_2 = document.getElementById("feedback_2");
 
-            let qo = document.getElementById("first_options");
-            let answers = [ ...data[0].incorrectAnswers, data[0].correctAnswer ]
-            shuffle(answers);
+    // When the user presses the "check answer" button.
+    submit.addEventListener("click", function () {
+        // Gets the first and only element with the name "answer".
+        let answer = document.getElementsByName("answer")[0];
 
-            for (let option of answers) {
-                let button = document.createElement("button");
-                
-                if (option == data[0].correctAnswer)
-                    button.setAttribute("name", "correct");
-                else
-                    button.setAttribute("name", "incorrect");
+        // If the answer typed is correct.
+        if (answer.value.toLowerCase() == "switzerland") {
+            // Changes the class to "correct", that will give it a green background, white letters, disable hover.
+            submit.classList.add("correct");
 
-                button.setAttribute("type", "button");
-                button.innerHTML = option;
+            // The second feedback element will have "correct" as text in green.
+            fb_2.innerHTML = "Correct :)";
+            fb_2.style.color = LIGHT_GREEN;
+        }
 
-                qo.appendChild(button);
-            }
+        // If it isn't.
+        else {
+            // Changes the class to "incorrect", that will give it a red background, white letters, disable hover.
+            submit.classList.add("incorrect");
 
-            // Gets the first and only element with the name "correct".
-            let correct = document.getElementsByName("correct")[0];
+            // The second feedback element will have "incorrect" as text in red.
+            fb_2.innerHTML = "Incorrect :(";
+            fb_2.style.color = LIGHT_RED;
+        }
 
-            // When the user presses the correct alternative.
-            correct.addEventListener("click", function() {
-                // Disable all options.
-                disable_options();
-
-                // Enable the correct option.
-                correct.classList.remove("disabled");
-
-                // Changes the class to "correct", that will give it a green background, white letters, disable hover.
-                correct.classList.add("correct");
-
-                // The first feedback element will have "correct" as text in green.
-                fb_1.innerHTML = "Correct :)";
-                fb_1.style.color = light_green;
-            });
-
-            // Gets a list with every element named "incorrect".
-            let incorrect_list = document.getElementsByName("incorrect");
-
-            // Iterates over that list.
-            for (let incorrect of incorrect_list) {
-                // When the user presses any incorrect alternative.
-                incorrect.addEventListener("click", function() {
-                    // Disable all options.
-                    disable_options();
-
-                    // Enable the incorrect option pressed.
-                    incorrect.classList.remove("disabled");
-
-                    // Changes the class to "incorrect", that will give it a red background, white letters, disable hover.
-                    incorrect.classList.add("incorrect");
-
-                    // The first feedback element will have "incorrect" as text in red.
-                    fb_1.innerHTML = "Incorrect :(";
-                    fb_1.style.color = light_red;
-                });
-            };
-
-            // Gets the first and only element with the name "submit_btn".
-            let submit = document.getElementsByName("submit_btn")[0];
-
-            // When the user presses the "check answer" button.
-            submit.addEventListener("click", function () {
-                // Gets the first and only element with the name "answer".
-                let answer = document.getElementsByName("answer")[0];
-
-                // If the answer typed is correct.
-                if (answer.value.toLowerCase() == "switzerland") {
-                    // Changes the class to "correct", that will give it a green background, white letters, disable hover.
-                    submit.classList.add("correct");
-
-                    // The second feedback element will have "correct" as text in green.
-                    fb_2.innerHTML = "Correct :)";
-                    fb_2.style.color = light_green;
-                }
-
-                // If it isn't.
-                else {
-                    // Changes the class to "incorrect", that will give it a red background, white letters, disable hover.
-                    submit.classList.add("incorrect");
-
-                    // The second feedback element will have "incorrect" as text in red.
-                    fb_2.innerHTML = "Incorrect :(";
-                    fb_2.style.color = light_red;
-                }
-
-                // Changes the class of the text input, where you type the answer to "disabled".
-                answer.classList.add("disabled");
-
-            });
-        })
+        // Changes the class of the text input, where you type the answer to "disabled".
+        answer.classList.add("disabled");
+    });
 });
