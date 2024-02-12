@@ -1,6 +1,6 @@
 # Protótipo-Trivia
 Inspirado no Lab Nº 8 do curso CS50
-
+Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 <h2>Tela inicial:</h2>
 
 ![Imagem da tela inicial](https://user-images.githubusercontent.com/46427886/220988566-c96c5592-0cfb-4c76-9aef-9fc1db9cbefa.jpeg)
@@ -15,7 +15,7 @@ Inspirado no Lab Nº 8 do curso CS50
 <h2>Coisas para adicionar:</h2>
 
 * ~Mais perguntas, de preferência ler as perguntas de um arquivo csv~ EM PROCESSO (Trivia API);
-* Sistema de pontos para ter o máximo de questões acertadas em sequência;
+* ~Sistema de pontos para ter o máximo de questões acertadas em sequência~ TEMOS PONTOS NA PARTE OBJETIVA (MÁX 10);
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
 * Sistema de tempo.
