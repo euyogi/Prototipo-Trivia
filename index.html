@@ -11,18 +11,16 @@
     </head>
     <body>
         <div class="header">
-            <h1>Trivia!</h1>
+            <h1 id="title">Trivia!</h1>
+            <h2 id="points">Points: 0</h2>
         </div>
 
         <div class="container">
-
             <div class="section">
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
-
-                <h3 id="first_question">Loading...</h3>
-
-                <div class="row" id="first_options"></div>
+                <h3 id="question_1">Loading...</h3>
+                <div class="row" id="options_1"></div>
 
                 <p><b id="feedback_1"></b></p>
             </div>
@@ -31,7 +29,7 @@
                 <h2>Part 2: Free Response</h2>
                 <hr>
 
-                <h3 id="second_question">In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <h3 id="question_2">In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
 
                 <input name="answer" type="text" placeholder="e.g: New Zealand"><button name="submit_btn" type="submit">Check Answer</button>
 
@@ -42,7 +40,6 @@
             <div id="reset_div">
                 <button onclick="window.location.reload()">Reset</button>
             </div>
-
         </div>
     </body>
 </html>
