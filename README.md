@@ -3,6 +3,10 @@
 Inspirado no Lab Nº 8 do curso CS50<br>
 Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 
+<h2>Para testar:</h2>
+
+<a align="center" href="https://euyogi.github.io/Prototipo-Trivia/">Abrir Projeto-Trivia</a>
+
 <h2>Tela inicial:</h2>
 
 ![Imagem da tela inicial](https://user-images.githubusercontent.com/46427886/220988566-c96c5592-0cfb-4c76-9aef-9fc1db9cbefa.jpeg)
@@ -19,10 +23,6 @@ Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
 * Sistema de tempo.
-
-<h2>Para testar:</h2>
-
-<a align="center" href="https://euyogi.github.io/Prototipo-Trivia/">Abrir Projeto-Trivia</a>
 
 <p align="center">
   Projeto feito por: Yogi Nam de Souza Barbosa
