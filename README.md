@@ -14,10 +14,8 @@ Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 * Feedback para saber se acertou;
 * Botão para resetar o site e tentar novamente.
 
-<h2>Coisas para adicionar:</h2>
+<h2>Possíveis coisas para adicionar:</h2>
 
-* ~Mais perguntas, de preferência ler as perguntas de um arquivo csv~ EM PROCESSO (Trivia API);
-* ~Sistema de pontos para ter o máximo de questões acertadas em sequência~ TEMOS PONTOS NA PARTE OBJETIVA (MÁX 10);
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
 * Sistema de tempo.
