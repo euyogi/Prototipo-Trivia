@@ -22,7 +22,8 @@ Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 
 * Sistema de moedas em que a cada certa quantidade de pontos ganha uma moeda;
 * Sistema de poder ver a resposta de uma questão em troca de moedas;
-* Sistema de tempo.
+* Sistema de tempo;
+* Achar uma API melhor para questões discursivas.
 
 <p align="center">
   Projeto feito por: Yogi Nam de Souza Barbosa
