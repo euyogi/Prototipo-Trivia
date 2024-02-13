@@ -9,7 +9,7 @@ Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 
 <h2>Tela inicial:</h2>
 
-![Imagem da tela inicial](https://user-images.githubusercontent.com/46427886/220988566-c96c5592-0cfb-4c76-9aef-9fc1db9cbefa.jpeg)
+![Imagem da tela inicial](https://github.com/euyogi/Prototipo-Trivia/assets/46427886/d7917d2d-fcac-436d-a7e7-25c2b62f0cd1)
 
 <h2>Funcionalidades:</h2>
 
