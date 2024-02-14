@@ -1,11 +1,13 @@
-# Protótipo-Trivia
+# Prototipo-Trivia
+
+<img alt="Header" width=100% src="https://capsule-render.vercel.app/api?type=waving&color=477bff&height=100&section=header">
 
 Inspirado no Lab Nº 8 do curso CS50<br>
 Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 
 <h2>Para testar:</h2>
 
-<a align="center" href="https://euyogi.github.io/Prototipo-Trivia/">Abrir Projeto-Trivia</a>
+<a align="center" href="https://euyogi.github.io/Prototipo-Trivia/">Abrir Prototipo-Trivia</a>
 
 <h2>Tela inicial:</h2>
 
@@ -26,9 +28,7 @@ Perguntas extraídas pela <a href="https://the-trivia-api.com/">Trivia API</a>
 * Achar uma API melhor para questões discursivas.
 
 <p align="center">
-  Projeto feito por: Yogi Nam de Souza Barbosa
+  Feito por: Yogi Nam de Souza Barbosa
 </p>
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/46427886/218377101-f832c1a3-6c48-4016-92d2-0d8b6a4fafd5.gif" width="10%" alt-text="Minha imagem de perfil (umcachorro)" />
-</div>
+<img alt="Footer" width=100% src="https://capsule-render.vercel.app/api?type=waving&color=477bff&height=100&section=footer">
